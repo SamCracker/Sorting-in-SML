@@ -15,9 +15,8 @@ fun split [] = ([],[])
 
 fun mergesort [] = []
 |	mergesort [a] = [a]
-|   mergesort [a,b] =	if a <= b then
-							[a,b]
-						else [b,a]
+|   mergesort [a,b] =	if a <= b then [a,b]
+			else [b,a]
 |   mergesort L =
         let val (M,N) = split L
         in
